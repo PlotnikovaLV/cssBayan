@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 .container {
-    width: 750px;
+    width: 40em;
     margin: 0 auto;
 }
 /*=== Баян ===*/
@@ -18,7 +18,7 @@ body {
 }
 .label {
     font-weight: bold;
-    padding: 10px;
+    padding: 1em;
 }
 .row-item {
     position: relative;
@@ -31,11 +31,14 @@ body {
 }
 .row-item__label {
     display: block;
-    padding: 10px;
-    border-top: 1px solid black;
+    padding: 1em;
+    border-top: 0.01em solid black;
+}
+.row-item__label:hover{
+    cursor: pointer;
 }
 .row-item__content {
-    padding: 20px;
+    padding: 2em;
     border-top: none;
     display: none;
 }
