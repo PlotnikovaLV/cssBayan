@@ -1,0 +1,60 @@
+/*=== Общие стили ===*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 0;
+}
+.container {
+    width: 40em;
+    margin: 0 auto;
+}
+/*=== Баян ===*/
+.bayan:hover {
+    cursor: pointer;
+}
+.label {
+    font-weight: bold;
+    padding: 1em;
+}
+.row-item {
+    position: relative;
+}
+.row-item__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.row-item__label {
+    display: block;
+    padding: 1em;
+    border-top: 0.01em solid black;
+}
+.row-item__label:hover{
+    cursor: pointer;
+}
+.row-item__content {
+    padding: 2em;
+    border-top: none;
+    display: none;
+}
+.img {
+    display: block;
+    margin: auto;
+}
+.row-item__input:checked ~ .row-item__content {
+    display: block;
+    animation: show 2s forwards;
+}
+.row-item__input:hover ~ .row-item__content {
+    display: block;
+    animation: show 1s forwards;
+}
+@keyframes show{
+    0%{opacity:0;}
+    100% {opacity:1;}
+}
